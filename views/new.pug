@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        title Create Product
+    body
+        h1 Create Product
+        form(action='/', method='post')
+            label(for='id') Product ID:
+            input(type='text', name='id', required)
+            br
+            label(for='name') Product Name:
+            input(type='text', name='name', required)
+            br
+            label(for='price') Price:
+            input(type='number', name='price', required)
+            br
+            label(for='description') Description:
+            textarea(name='description', required)
+            br
+            label(for='stock') Stock:
+            input(type='number', name='stock', required)
+            br
+            button(type='submit') Create Product
