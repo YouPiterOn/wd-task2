@@ -28,7 +28,9 @@ mongoose.set('strictQuery', false);
 
 const port = 4000;
 
-app.use('/', routes.productRoutes);
+app.use('/product', routes.productRoutes);
+app.use('/cookie', routes.cookieRoutes);
+app.use('/header', routes.headerRoutes);
 
 app.listen(port, () => {
     
