@@ -31,6 +31,7 @@ const port = 4000;
 app.use('/product', routes.productRoutes);
 app.use('/cookie', routes.cookieRoutes);
 app.use('/header', routes.headerRoutes);
+app.use('/user', routes.userRoutes);
 
 app.listen(port, () => {
     
